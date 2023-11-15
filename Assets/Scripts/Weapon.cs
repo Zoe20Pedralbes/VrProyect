@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public abstract class Weapon : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] protected GameObject Bullet;
+    [SerializeField] protected Transform spawnBullet;
+    [SerializeField] protected float ReloadTime;
+    protected bool reloading;
+    protected int MaxAmmo;
+    protected int ActualAmmo;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+    public abstract void Shot();
+    public abstract void Reload();
+
+    protected abstract void reload();
 }
