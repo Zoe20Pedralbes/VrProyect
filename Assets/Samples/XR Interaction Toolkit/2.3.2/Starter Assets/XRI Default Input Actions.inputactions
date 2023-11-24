@@ -2104,6 +2104,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Mouse",
+            "id": "4e688d23-a5e8-4101-91cb-588c7f03287b",
+            "actions": [
+                {
+                    "name": "Shot",
+                    "type": "Button",
+                    "id": "896cc7c6-2e0d-4e24-8c0e-7fee2121bc9f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "79bfa822-6039-44d1-9600-c2356e1a1ccd",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
