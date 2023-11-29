@@ -12,10 +12,6 @@ public class Pistol : Weapon
         shootingAction.FindActionMap("Mouse").FindAction("Shot").performed += Shot;
         ActualAmmo = MaxAmmo;
     }
-    public override void Reload()
-    {
-        throw new System.NotImplementedException();
-    }
 
     public override void Shot(InputAction.CallbackContext ctx)
     {
@@ -35,12 +31,12 @@ public class Pistol : Weapon
             {
                 reloading = true;
 
-                Invoke("reload", 2);
+                Invoke("Reload", 2);
             }
         }
     }
 
-    protected override void reload()
+    protected override void Reload()
     {
         reloading = false;
         ActualAmmo = MaxAmmo;

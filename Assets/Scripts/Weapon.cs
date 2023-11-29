@@ -8,13 +8,11 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] protected GameObject Bullet;
     [SerializeField] protected Transform spawnBullet;
     [SerializeField] protected float ReloadTime;
-    [SerializeField]protected bool reloading;
-    [SerializeField]protected int MaxAmmo;
+    [SerializeField] protected bool reloading;
+    [SerializeField] protected int MaxAmmo;
     protected int ActualAmmo;
 
 
     public abstract void Shot(InputAction.CallbackContext ctx);
-    public abstract void Reload();
-
-    protected abstract void reload();
+    protected abstract void Reload();
 }
