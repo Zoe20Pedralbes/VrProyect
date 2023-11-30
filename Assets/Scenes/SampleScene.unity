@@ -123,6 +123,25 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &179760783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3082387124479617782, guid: 2fac977ae707293428d1ce1b92085e0d, type: 3}
+  m_PrefabInstance: {fileID: 1446944589}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &179760784
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179760783}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5402202952707582805, guid: 2fac977ae707293428d1ce1b92085e0d, type: 3}
 --- !u!1 &278395352
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,12 +252,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e748d7341cbce44ca01ca63e45ed7ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootingAction: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   Bullet: {fileID: 8007699244374445250, guid: 5a1c8700131f6cb43a12fcc265c99074, type: 3}
   spawnBullet: {fileID: 1900227109}
   ReloadTime: 1
+  FireRate: 0
   reloading: 0
   MaxAmmo: 10
-  shootingAction: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!1 &613408001
 GameObject:
   m_ObjectHideFlags: 0
